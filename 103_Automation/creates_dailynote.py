@@ -13,13 +13,21 @@ todo_filepath = os.path.join(base_path, "To-Do", todo_filename)
 todo_content = f"""
 # {today} Todo
 
+<br>
+
 ## 오늘의 명언
 > 
+
+<br>
 
 ## 오늘의 목표
 * 
 
+<br>
+
+
 ## 오늘의 todo
+
 
 ### 오전
 - [ ] 
@@ -29,6 +37,10 @@ todo_content = f"""
 
 ### 저녁
 - [ ] 
+
+<br>
+## 오늘의 Self Review
+
 """
 
 # To-Do 폴더 및 파일 생성
