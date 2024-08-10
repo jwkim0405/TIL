@@ -6,6 +6,7 @@
 - [gitignore.io](gitignore.io) 사이트에서 코드를 받아올 수 있음.
   - `java`, `windows`, `macOS`, `eclipse`, `intellij` 등 추가
   - `.classpath`을 삭제하려면 직접 파일에 적어주기
+  - `.project`은 주석 제거해서 사용하기!
 
 <br>
 
