@@ -1,8 +1,11 @@
 # 파일 및 폴더 삭제 (Git에서 제거하기)
 
 ## .gitignore
-`.gitignore` 파일: 특정 파일이나 폴더를 원격 저장소에 업로드하지 않도록 설정하는 파일  
-`.gitignore`에 설정한 항목은 이후에 추가 및 변경된 경우에만 적용, 이미 원격 저장소에 올라간 파일에는 영향 X
+- `.gitignore` 파일: 특정 파일이나 폴더를 원격 저장소에 업로드하지 않도록 설정하는 파일  
+- `.gitignore`에 설정한 항목은 이후에 추가 및 변경된 경우에만 적용, 이미 원격 저장소에 올라간 파일에는 영향 X
+- [gitignore.io](gitignore.io) 사이트에서 코드를 받아올 수 있음.
+  - `java`, `windows`, `macOS`, `eclipse`, `intellij` 등 추가
+  - `.classpath`을 삭제하려면 직접 파일에 적어주기
 
 <br>
 
