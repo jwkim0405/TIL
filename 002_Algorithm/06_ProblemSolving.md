@@ -1,2 +1,0 @@
-# SWEA_ProblemSolving
-
