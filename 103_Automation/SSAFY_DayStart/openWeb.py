@@ -4,8 +4,8 @@ import shlex
 # 열고 싶은 URL 리스트
 urls = [
     "https://edu.ssafy.com/edu/main/index.do",
-    "https://github.com/ssafy12-seoul07",
     "https://meeting.ssafy.com/s12p01a7/channels/town-square",
+    "https://github.com/ssafy12-seoul07",
     "https://github.com/jwkim0405",
     "https://github.com/jwkim0405/AlgorithmStudy",
     "https://swexpertacademy.com/main/main.do"
