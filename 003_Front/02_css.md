@@ -1,7 +1,18 @@
 # CSS
 
+* CSS Diner, Flexbox Froggy 반복하면서 개념 잘 익히기!
+
+
+## 질문
+
 * `.gitignore에서 *.py와 .py는 같은 의미인가요????????????????????????????????`
 * `button의 기본형은 submit?!`
+
+## `새로운 정보`
+* .small:last-child -> last-child의 속성과 small class의 속성을 모두 가지고 있는 것들을 의미함. / small class들 중에서 last-child를 의미하는 것이 아님 주의!
+* flex-direction: column이 되는 경우 justify-content는 위아래, align-items는 좌우를 의미한다. /원래 row일때와 역할이 서로 반대!
+* align-content는 줄 간격을 의미한다!
+
 
 ## Contents
 * CSS 개념
