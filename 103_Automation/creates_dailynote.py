@@ -12,7 +12,6 @@ todo_filepath = os.path.join(base_path, "To-Do", todo_filename)
 # To-Do 파일에 작성할 기본 내용
 todo_content = f"""
 # {today} Todo
-
 <br>
 
 ## 오늘의 명언
@@ -25,21 +24,18 @@ todo_content = f"""
 
 <br>
 
-
 ## 오늘의 todo
 
-
 ### 오전
-- [ ] 
+- [ ] good morning 
+<br>
 
 ### 오후
-- [ ] 
+- [ ] good afternoon
+<br>
 
 ### 저녁
-- [ ] 
-
-<br>
-## 오늘의 Self Review
+- [ ] and good night!
 
 """
 
@@ -64,8 +60,8 @@ def ask_to_create_folders():
             print(f"{file_name} 파일이 {folder_path} 폴더에 생성되었습니다.")
 
         # 사용자 입력을 받아 지정한 폴더에 지정한 이름의 파일을 생성
-        folder_name = input("폴더명을 입력하세요 (예: Algorithm): ")
-        file_name = input("파일명을 입력하세요 (예: example.md): ")
+        folder_name = "002_Algorithm"
+        file_name = input("파일명을 입력하세요 (예: 05_Queue.md): ")
         create_custom_file(folder_name, file_name)
     elif response == 'N':
         print("프로그램을 종료합니다.")
