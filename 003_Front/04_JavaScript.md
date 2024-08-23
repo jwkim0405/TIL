@@ -1,8 +1,12 @@
 # JavaScript
 
 ## 자바스크립트란?
-* 프로토타입 기반 객체 생성을 지원하는 동적 스크립트 언어
+* <ins>프로토타입 기반 객체 생성을 지원하는 동적 스크립트 언어</ins>
+  * 동적 언어: 프로그램이 실행되는 동안 변할 수 있다 => 변수의 값과 타입이 변할 수 있다.
+  * 문자열, 숫자, 함수 등으로!
 * 근본이 없는 언어
+* Web browser에서 주로 사용
+  * Node.js를 이용하여 콘솔 환경에서 사용
 * 자바와 기본 구문이 비슷하다. (C언어의 기본 구문을 바탕)
 * 브랜든 아이크 개발(1995)
 * Mocha -> LiveScript -> JavaScript
@@ -11,15 +15,22 @@
 ## 브라우저 엔진
 * java를 실행하기 위해 jdk8, jdk17을 쓰는 것처럼
 * 브라우저가 작동하는데 필요한 기반 기술을 모두 포함하는 엔진
-* 단순 markup이 아니라 자바스크립트나 통신 모듈을 실행하기 위해서 필요
+* 단순 markup이 아니라 <ins>자바스크립트나 통신 모듈을 실행</ins>하기 위해서 필요
 * 웹 브라우저마다 사용하는 엔진이 조금씩 다름
+  * 엔진들은 기본적으로 비슷한 역할을 하지만, 각각의 엔진은 조금씩 다르게 작동할 수 있음.
+  * 따라서, 웹 페이지가 브라우저마다 약간 다르게 보일 수 있음.
   * Chrome: Blink
+  * Safari: WebKit
+  * Firefox: Gecko
 
 
 ## JS 관리
-* ECMA에서 관리
+* ECMA(국제표준화기구)에서 관리
+  * 자바스크립트 표준: ECMAScript
 * HTML-> WHATWG(왓웻지)에서 관리
-* CSS -> mdn
+* CSS -> MDN(Mozilla Developer Network)
+  * 웹 개발자들이 참고하는 주요 문서와 튜토리얼을 제공하는 사이트
+  * CSS 표준과 사용법에 대한 자료 제공
 
 ```
 [UN IT 강국]
@@ -54,9 +65,28 @@
 ## 외부스크립트 참조하기
 * .js 확장자를 가진 파일을 생성
 * html 문서에서 `<script src = "outer.js"></script>`
-* css -> `<link href="">`
-* js -> `<script src="">`
 
+### [ CSS와 JS의 참조 비교 ]
+
+#### 1. css -> `<link href="">`
+* `link`: HTML 문서에 CSS 파일이나 favicon(favorite icon)과 같은 외부 파일을 연결할 떄 사용
+* `rel`: relationship의 약자, 현재 문서와 연결된 파일 간의 관계를 정의
+  * `stylesheet`: 연결된 파일이 스타일 시트임
+  * `icon`: 연결된 파일이 웹 페이지의 아이콘(보통 favicon)임을 나타냄
+* `href`: hypertext reference의 약자, 연결할 외부 파일의 URL 지정
+
+#### 2. js -> `<script src="">`
+* `script`: js 코드를 HTML 문서에 포함시키거나, 외부 JS 파일을 로드할 때 사용
+* `src`: source의 약자, 외부 스크립트 파일의 경로 지정
+
+
+```html
+<!-- 내부 스크립트 사용 ex. -->
+<script>console.log('Hello, world!');</script>
+
+<!-- 외부 스크립트 사용 ex. -->
+<script src = "script.js"></script>
+```
 
 
 ## 주석(Comment)
@@ -78,7 +108,9 @@
 * `var`, `let`, `const` 키워드를 이용해서 변수를 선언
 * `undefined`는 변수에 아무 값도 없어서 타입을 알 수 없는 경우를 말함
 * 동적 타입: 대입되는 값에 따라서 용도가 변경되는 방식
-* 문자, $, _로 시작, 대소문자 구분, 예약어 사용X
+* `문자`, `$`, `_`로 시작
+* 대소문자 구분
+* 예약어(const, var, let) 사용 X
 
 |   |스코프| 재선언 |재할당| 
 |:-:|:----:|:----:|:----:|
@@ -90,13 +122,15 @@
 * 재선언 가능, 재할당 가능
 * ES6 이전에 변수 선언 시 사용
 * `호이스팅(Hoisting)` 특성이 있음
+  * javascript에서 <ins>변수 또는 함수의 선언을 코드 최상단으로 끌어올리는 것처럼 처리</ins>하는 특성
+  * 변수나 함수를 실제 코드 상의 위치와 상관없이 선언 전에도 참조할 수 있게 해준다.
   * Java에서의 static => 바로바로 접근해서 값을 가져올 수 있으니 편리. 클래스 영역에 올라가있는 것
-  * static과 비슷함. 밑에서 선언해도 위에서 출력을 하거나 어떤 명령을 하면 실행이 됨
+    * static과 비슷함. 밑에서 선언해도 위에서 출력을 하거나 어떤 명령을 하면 실행이 됨
   * 함수 스코프
     ```js
-    console.log(name)
+    console.log(name) // undefined 출력
 
-    var name = "dixon"
+    var name = "dixon" // "dixon" 출력
     console.log(name)
     ```
 
