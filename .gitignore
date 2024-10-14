@@ -1,10 +1,11 @@
-# Created by https://www.toptal.com/developers/gitignore/api/macos,windows,visualstudiocode,java,eclipse,python
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,visualstudiocode,java,eclipse,python
+# Created by https://www.toptal.com/developers/gitignore/api/java,windows,visualstudiocode,macos,eclipse,python
+# Edit at https://www.toptal.com/developers/gitignore?templates=java,windows,visualstudiocode,macos,eclipse,python
 
 ### Eclipse ###
 .metadata
 bin/
 tmp/
+Servers/
 *.tmp
 *.bak
 *.swp
@@ -81,9 +82,12 @@ local.properties
 .mtj.tmp/
 
 # Package Files #
+*.jar
 *.war
 *.nar
 *.ear
+*.zip
+*.tar.gz
 *.rar
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
@@ -126,12 +130,14 @@ Temporary Items
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
+*.py[cod]
 *$py.class
 
 # C extensions
 *.so
 
 # Distribution / packaging
+.Python
 build/
 develop-eggs/
 dist/
@@ -208,7 +214,7 @@ ipython_config.py
 # pyenv
 #   For a library or package, you might want to ignore these files since the code is
 #   intended to run in multiple environments; otherwise, check them in:
-.python-version
+# .python-version
 
 # pipenv
 #   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
@@ -265,6 +271,9 @@ venv.bak/
 .mypy_cache/
 .dmypy.json
 dmypy.json
+
+# Pyre type checker
+.pyre/
 
 # pytype static type analyzer
 .pytype/
@@ -334,10 +343,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# DS_Store
-.DS_Store
-._.DS_Store
-**/.DS_Store
-**/._.DS_Store
-
-# End of https://www.toptal.com/developers/gitignore/api/macos,windows,visualstudiocode,java,eclipse,python
+# End of https://www.toptal.com/developers/gitignore/api/java,windows,visualstudiocode,macos,eclipse,python
